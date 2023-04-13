@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CQGI32TtyudiKlofyVSnNucDkLfjayQwe4+9XFfc0T6NRP5L9ZKuBrXIn0WWTIqLK0tfQF5c2eyzJL5BT6ZQQw==",
+  "dgSpecHash": "AguMirDEA72q/rsAh6qjjQmeRmcG/oKJYJe4XONlemfGUU2NC3QpL+S3Bz/5piVYfM5+KY69aQpQFtID0aKH/w==",
   "success": true,
-  "projectFilePath": "E:\\Project\\ASP.NET MVC\\SchoolLibraryManagment\\SchoolLibraryManagment.csproj",
+  "projectFilePath": "E:\\git\\LMS\\LibraryManagmentSystem\\SchoolLibraryManagment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\uiqbal\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\uiqbal\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

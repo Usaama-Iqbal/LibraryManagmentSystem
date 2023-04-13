@@ -8368,11 +8368,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Project\\ASP.NET MVC\\SchoolLibraryManagment\\SchoolLibraryManagment.csproj",
+      "projectUniqueName": "E:\\git\\LMS\\LibraryManagmentSystem\\SchoolLibraryManagment.csproj",
       "projectName": "SchoolLibraryManagment",
-      "projectPath": "E:\\Project\\ASP.NET MVC\\SchoolLibraryManagment\\SchoolLibraryManagment.csproj",
+      "projectPath": "E:\\git\\LMS\\LibraryManagmentSystem\\SchoolLibraryManagment.csproj",
       "packagesPath": "C:\\Users\\uiqbal\\.nuget\\packages\\",
-      "outputPath": "E:\\Project\\ASP.NET MVC\\SchoolLibraryManagment\\obj\\",
+      "outputPath": "E:\\git\\LMS\\LibraryManagmentSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\uiqbal\\AppData\\Roaming\\NuGet\\NuGet.Config",

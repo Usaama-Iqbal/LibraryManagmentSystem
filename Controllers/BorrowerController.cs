@@ -91,7 +91,8 @@ namespace SchoolLibraryManagment.Controllers
                                      ReturnDate = a.ReturnDate,
                                      BookId = a.BookId,
                                      Title = b == null ? "" : b.Title,
-                                     StudentId = a.StudentId
+                                     StudentId = a.StudentId,
+                                    // Name = b == null ? ""  : b.Name,
 
                                  };
 
