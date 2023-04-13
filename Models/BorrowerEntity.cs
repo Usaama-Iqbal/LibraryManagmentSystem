@@ -40,6 +40,10 @@ namespace SchoolLibraryManagment.Models
         [NotMapped]
         public String Title { get; set; }
 
+        [NotMapped]
+        public String StudentName { get; set; }
+
+
 
 
 

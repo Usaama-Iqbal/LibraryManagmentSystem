@@ -30,8 +30,12 @@
                 @Html.DisplayNameFor(model => model.Title)
             </th>
 
-              <th>
+           @*   <th>
                 @Html.DisplayNameFor(model => model.StudentId)
+            </th>*@
+
+            <th>
+                @Html.DisplayNameFor(model => model.StudentName)
             </th>
          
             <th>Actions</th>
@@ -51,12 +55,16 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
-             <td>
+            @* <td>
                 @Html.DisplayFor(modelItem => item.StudentId)
-            </td>
+            </td>*@
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentName)
+                </td>
                   
              <td>
-                @Html.ActionLink( "Update", "AddBorrower", new {  item.BorrowerId, item.DateBorrowed, item.ReturnDate, item.BookId, item.StudentId } , new { @class="btn btn-outline-success rounded-pill"}) <br/> <br/>
+                @Html.ActionLink( "Update", "AddBorrower", new {  item.BorrowerId, item.DateBorrowed, item.ReturnDate, item.BookId, item.StudentId, item.StudentName } , new { @class="btn btn-outline-success rounded-pill"}) <br/> <br/>
 
                 @Html.ActionLink("Delete", "DeleteBorrower", new {  item.BorrowerId  }, new { @class = "btn btn-outline-danger rounded-pill",onclick="return confirm('Do you really want this record?')" })
             </td>

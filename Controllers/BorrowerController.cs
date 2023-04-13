@@ -70,15 +70,16 @@ namespace SchoolLibraryManagment.Controllers
 
         public IActionResult BorrowList()
         {
+
             try
             {
 
 
                 var BorrowList = from a in _Db.tblBorrows
-                                 join b in _Db.tblBook
-                                 on a.BookId equals b.BookId
-                                 into Book
-                                 from b in Book.DefaultIfEmpty()
+                                 join b in _Db.tblBook on a.BookId equals b.BookId
+                                 join c in _Db.tblStudent on a.StudentId equals c.StudentId
+                                 //into Book
+                                 //from b in Book.DefaultIfEmpty()
                                  
 
 
@@ -92,7 +93,8 @@ namespace SchoolLibraryManagment.Controllers
                                      BookId = a.BookId,
                                      Title = b == null ? "" : b.Title,
                                      StudentId = a.StudentId,
-                                    // Name = b == null ? ""  : b.Name,
+                                     StudentName = c == null ? "" : c.Name
+                                     
 
                                  };
 
