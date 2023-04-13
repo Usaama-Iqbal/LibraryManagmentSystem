@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\uiqbal\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\uiqbal\\.nuget\\packages"
+    ]
+  }
+}

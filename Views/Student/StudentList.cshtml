@@ -1,0 +1,104 @@
+﻿@model IEnumerable<SchoolLibraryManagment.Models.StudentEntity>
+
+@{
+    ViewData["Title"] = "StudentList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Student Section</h1>
+
+<hr />
+
+<p class="float-left">
+   <a asp-action="AddStudent" asp-controller="Student" class="btn btn-outline-secondary">Add Student</a>
+</p>
+
+<p class="float-right">
+   @* <a asp-action="AddCustomer" asp-controller="Item" class="btn btn-outline-secondary">Add Customer</a> |*@
+     @*<a asp-action="List" class="btn btn-outline-primary">Item List</a> |
+     <a asp-action="DepartmentList" asp-controller="Item" class="btn btn-outline-primary">Category List</a>*@
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FatherName)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+
+              <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+
+              <th>
+                @Html.DisplayNameFor(model => model.DOB)
+            </th>
+
+              <th>
+                @Html.DisplayNameFor(model => model.Mail)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Contact)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+                     
+            <th>Actions</th>
+
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FatherName)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Mail)
+
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Contact)
+
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+
+            </td>
+                      
+             <td>
+                @Html.ActionLink( "Update", "AddStudent", new {  item.StudentId, item.Name, item.FatherName, item.Gender, item.Age, item.DOB, item.Mail, item.Contact, item.Address } , new { @class="btn btn-outline-success rounded-pill"}) <br/> <br/>
+
+                @Html.ActionLink("Delete", "DeleteStudent", new {  item.StudentId  }, new { @class = "btn btn-outline-danger rounded-pill",onclick="return confirm('Do you really want this record?')" })
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>
+

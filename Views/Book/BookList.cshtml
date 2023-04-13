@@ -1,0 +1,81 @@
+﻿@model IEnumerable<SchoolLibraryManagment.Models.BookEntity>
+@{
+    ViewData["Title"] = "BooksSection";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Book Section</h1>
+
+<hr />
+
+<p class="float-left">
+   <a asp-action="AddBook" asp-controller="Book" class="btn btn-outline-secondary">Add Book</a>
+</p>
+
+<p class="float-right">
+   @* <a asp-action="AddCustomer" asp-controller="Item" class="btn btn-outline-secondary">Add Customer</a> |*@
+     @*<a asp-action="List" class="btn btn-outline-primary">Item List</a> |
+     <a asp-action="DepartmentList" asp-controller="Item" class="btn btn-outline-primary">Category List</a>*@
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+
+              <th>
+                @Html.DisplayNameFor(model => model.BookNo)
+            </th>
+
+              <th>
+                @Html.DisplayNameFor(model => model.PublishDate)
+            </th>
+
+             
+                     
+            <th>Actions</th>
+
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Publisher)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.BookNo)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.PublishDate)
+            </td>
+             
+                      
+             <td>
+                @Html.ActionLink( "Update", "AddBook", new {  item.BookId, item.Title, item.Publisher, item.Author, item.BookNo, item.PublishDate } , new { @class="btn btn-outline-success rounded-pill"}) <br/> <br/>
+
+                @Html.ActionLink("Delete", "DeleteBook", new {  item.BookId  }, new { @class = "btn btn-outline-danger rounded-pill",onclick="return confirm('Do you really want this record?')" })
+            </td>
+
+        </tr>
+}
+    </tbody>
+</table>
+
+
