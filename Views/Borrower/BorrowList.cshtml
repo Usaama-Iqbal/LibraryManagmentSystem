@@ -15,8 +15,9 @@
      @*<a asp-action="List" class="btn btn-outline-primary">Item List</a> |
      <a asp-action="DepartmentList" asp-controller="Item" class="btn btn-outline-primary">Category List</a>*@
 </p>
-<table class="table">
+<table class="table table-bordered mg-b-0">
     <thead>
+        
         <tr>
             
             <th>
@@ -41,6 +42,7 @@
             <th>Actions</th>
 
         </tr>
+      
     </thead>
     <tbody>
 @foreach (var item in Model) {
@@ -64,7 +66,7 @@
                 </td>
                   
              <td>
-                @Html.ActionLink( "Update", "AddBorrower", new {  item.BorrowerId, item.DateBorrowed, item.ReturnDate, item.BookId, item.StudentId, item.StudentName } , new { @class="btn btn-outline-success rounded-pill"}) <br/> <br/>
+                @Html.ActionLink( "Update", "AddBorrower", new {  item.BorrowerId, item.DateBorrowed, item.ReturnDate, item.BookId, item.StudentId, item.StudentName } , new { @class="btn btn-outline-success rounded-pill"}) |
 
                 @Html.ActionLink("Delete", "DeleteBorrower", new {  item.BorrowerId  }, new { @class = "btn btn-outline-danger rounded-pill",onclick="return confirm('Do you really want this record?')" })
             </td>

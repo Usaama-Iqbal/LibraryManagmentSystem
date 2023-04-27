@@ -17,7 +17,7 @@
      @*<a asp-action="List" class="btn btn-outline-primary">Item List</a> |
      <a asp-action="DepartmentList" asp-controller="Item" class="btn btn-outline-primary">Category List</a>*@
 </p>
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
             
@@ -68,7 +68,7 @@
              
                       
              <td>
-                @Html.ActionLink( "Update", "AddBook", new {  item.BookId, item.Title, item.Publisher, item.Author, item.BookNo, item.PublishDate } , new { @class="btn btn-outline-success rounded-pill"}) <br/> <br/>
+                @Html.ActionLink( "Update", "AddBook", new {  item.BookId, item.Title, item.Publisher, item.Author, item.BookNo, item.PublishDate } , new { @class="btn btn-outline-success rounded-pill"}) |
 
                 @Html.ActionLink("Delete", "DeleteBook", new {  item.BookId  }, new { @class = "btn btn-outline-danger rounded-pill",onclick="return confirm('Do you really want this record?')" })
             </td>

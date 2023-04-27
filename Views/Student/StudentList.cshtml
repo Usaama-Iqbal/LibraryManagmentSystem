@@ -18,7 +18,7 @@
      @*<a asp-action="List" class="btn btn-outline-primary">Item List</a> |
      <a asp-action="DepartmentList" asp-controller="Item" class="btn btn-outline-primary">Category List</a>*@
 </p>
-<table class="table">
+<table class="table table-bordered mg-b-0">
     <thead>
         <tr>
             
@@ -92,7 +92,7 @@
             </td>
                       
              <td>
-                @Html.ActionLink( "Update", "AddStudent", new {  item.StudentId, item.Name, item.FatherName, item.Gender, item.Age, item.DOB, item.Mail, item.Contact, item.Address } , new { @class="btn btn-outline-success rounded-pill"}) <br/> <br/>
+                @Html.ActionLink( "Update", "AddStudent", new {  item.StudentId, item.Name, item.FatherName, item.Gender, item.Age, item.DOB, item.Mail, item.Contact, item.Address } , new { @class="btn btn-outline-success rounded-pill"}) |
 
                 @Html.ActionLink("Delete", "DeleteStudent", new {  item.StudentId  }, new { @class = "btn btn-outline-danger rounded-pill",onclick="return confirm('Do you really want this record?')" })
             </td>
