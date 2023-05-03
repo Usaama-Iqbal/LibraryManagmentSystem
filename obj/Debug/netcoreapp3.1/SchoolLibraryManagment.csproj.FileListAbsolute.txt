@@ -549,3 +549,4 @@ E:\git\LMS\LibraryManagmentSystem\obj\Debug\netcoreapp3.1\SchoolLibraryManagment
 E:\git\LMS\LibraryManagmentSystem\obj\Debug\netcoreapp3.1\SchoolLibraryManagment.dll
 E:\git\LMS\LibraryManagmentSystem\obj\Debug\netcoreapp3.1\SchoolLibraryManagment.pdb
 E:\git\LMS\LibraryManagmentSystem\obj\Debug\netcoreapp3.1\SchoolLibraryManagment.genruntimeconfig.cache
+E:\git\LMS\LibraryManagmentSystem\obj\Debug\netcoreapp3.1\Razor\Views\Login\LoginList.cshtml.g.cs

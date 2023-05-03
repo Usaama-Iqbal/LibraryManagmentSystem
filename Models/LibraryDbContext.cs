@@ -17,7 +17,7 @@ namespace SchoolLibraryManagment.Models
 
         public DbSet <BorrowerEntity> tblBorrows { get; set; }
 
-       
+        public DbSet<Login> tblLogin { get; set; }
 
     }
 }

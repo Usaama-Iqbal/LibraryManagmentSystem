@@ -53,7 +53,7 @@ namespace SchoolLibraryManagment
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Book}/{action=BookList}/{id?}");
+                    pattern: "{controller=Login}/{action=LoginList}/{id?}");
             });
         }
     }
